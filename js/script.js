@@ -28,6 +28,7 @@ function findLocation(){
 
 		$('#address').text('Address: ' + data.results[0].formatted);
 		$('#lat').text('Lattitude: ' + data.results[0].geometry.lat);
+		$('#lon').text("Longitude: " + data.results[0].geometry.lon);
 	});
 }
 
