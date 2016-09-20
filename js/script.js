@@ -2,7 +2,8 @@
 // We're doing reverse
 
 // I've generated a key so you can start right away
-var api_key = '614bd81902a73f0d3f6db088fdab4f68'; 
+var api_key = '614bd81902a73f0d3f6db088fdab4f68';
+var map_key = 'AIzaSyDj2P_fcasFVsYnbrPI_YiSZdZsNzFtNkY';
 
 // The end point is the url you request to get data
 var endpoint = 'http://api.opencagedata.com/geocode/v1/json?q=';
@@ -16,9 +17,10 @@ function findLocation(){
  	var encodedQuery = encodeURIComponent(query);
 
  	// Now we can construct the url
-	var url = endpoint + encodedQuery + '&key=' + api_key;
+	var url = endpoint + encodedQuery + '&key=' + api_key + map_key;
 	// https://api.opencagedata.com/geocode/v1/json?q=Wellington,+New%20Zealand&key=614bd81902a73f0d3f6db088fdab4f68&pretty=1
 	// It should look like that - try opening that in your browser
+	
 
 	// Now we can use Jquery to make a GET request
 	$.get(url, function(data) {
