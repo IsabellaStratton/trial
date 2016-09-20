@@ -10,7 +10,7 @@ var endpoint = 'http://api.opencagedata.com/geocode/v1/json?q=';
 // The full url will be constructed like this
 // http://api.opencagedata.com/geocode/v1/json?q=PLACENAME&key=YOUR-API-KEY
 function findLocation(){
-	var query = ("#textbox").val();
+	var query = ("#textbox");
 
 	//The query needs to be encoded for URLs - ie replaces spaces with %20's
  	var encodedQuery = encodeURIComponent(query);
