@@ -6,18 +6,13 @@
 	</head>
 <body style="background-color:powderblue; text-align:center;">
 	<h1>Location Finder</h1>
-	<form id="frm1" action="form_action.asp">
-  	First name: <input type="text" name="fname"><br>
+	
 	<input type="button" id='location'><button onclick="findLocation()" value="Submit">Find location</button>
-	</form>
+	
 	<p id='address'>Address: </p>
 	<p id='lat'>Lattitude: </p>
 	<p id='lng'>Longitude: </p>
-<script>
-function findLocation() {
-    document.getElementById("frm1").submit();
-}
-</script>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
